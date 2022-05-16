@@ -10,7 +10,7 @@
         <h1 class="pb-4 tracking-widest">Bouldering</h1>
 
         <p>
-            For a few years now I have been going bouldering more than 3 times a week. I particulary enjoy how one can train alone and have fun together. You don't need somebody else to boulder, but if you have somebody else, you can goof around and help each other.
+            For a few years now I have been going bouldering more than 3 times a week. I particularly enjoy how one can train alone or have fun together with friends. You don't need somebody else to boulder, but if you have somebody else, you can goof around and help each other. Additionally, I found Bouldering to be a great way to get moving (also through biking to the Bouldering center) as well as to find and use energy.
         </p>
     </div>
 

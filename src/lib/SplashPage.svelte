@@ -30,7 +30,8 @@
     function flashLetter () {
         for (let elem of document.querySelectorAll(".splashImage")) {
             elem.children[1].innerHTML = "";
-            elem.children[0].classList.remove("opacity-50")
+            elem.children[0].classList.remove("opacity-0")
+            elem.children[0].classList.add("opacity-100");
         }
 
         while (true) {
@@ -52,7 +53,8 @@
             let elem = elemList[Math.floor(Math.random() * (elemList.length - 1))];
             // @ts-ignore  This is surely an HTML Element
             if (!!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length)) {
-                elem.children[0].classList.add("opacity-50")
+                elem.children[0].classList.add("opacity-0")
+                elem.children[0].classList.remove("opacity-100")
                 elem.children[1].innerHTML = "<p>" + (["N", "A", "T", "H", "A", "N", "Z", "U", "M", "B", "U", "S", "C", "H"])[currentLetter] + "</p>";
 
                 currentLetter++;
@@ -64,9 +66,9 @@
                             document.querySelector(".aboutme").scrollIntoView({behavior: "smooth"});
                             animationDone = true;
                         }
-                    }, 700);
+                    }, 1000);
                 } else { 
-                    setTimeout(flashLetter, 700); 
+                    setTimeout(flashLetter, 1000); 
                 }
                 return;
             }
@@ -78,15 +80,16 @@
     <div class="z-0 h-full w-full flex flex-row flex-wrap justify-evenly items-center p-2">
         {#each images as image} 
             <div class="splashImage h-1/2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2 relative">
-                <img 
-                    class="opacity-full grayscale-[70%] hover:grayscale-0 object-cover h-full w-full rounded-lg" 
+                <div 
+                    class="transition-opacity duration-500 opacity-100 bg-cover h-full w-full rounded-lg" 
                     src={image[0]} 
                     alt={image[2]} 
-                >
+                    style="background-image: url('{ image[0] }')"
+                />
 
 
                 <!-- svelte-ignore a11y-missing-content -->
-                <h1 class="text-9xl text-center absolute top-0 bottom-0 left-0 right-0 flex flex-row justify-center items-center pointer-events-none" />
+                <h1 class="bg-white font-bold bg-clip-text text-[250px] text-center absolute top-2 bottom-2 left-2 right-2 flex flex-row justify-center items-center pointer-events-none bg-cover" style="color: transparent; background-image: url('{ image[0] }')" />
             </div>
         {/each}
     </div>

@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";   
-    import CaretCircleDown from "phosphor-svelte/lib/CaretCircleDown";
     import PageEuphonium from "./Pages/PageEuphonium.svelte";
     import PageBouldering from "./Pages/PageBouldering.svelte";
     import PageCoding from "./Pages/PageCoding.svelte";
@@ -78,26 +77,39 @@
             data-period="2000"
             data-rotate='[ "boulder", "code", "play the euphonium", "eat", "repeat" ]'
         />
-
-        <div class="absolute bottom-8 pointer-events-auto hover:cursor-pointer">
-            <CaretCircleDown size={64} />
-        </div>
     </div>
 
+`
+
+
+
+`
+
+    <div class="z-1 relative w-full min-h-screen pointer-events-none flex flex-col justify-center items-center">
+        <h1 class="nz-handwriting text-black subpixel-antialiased text-7xl text-center w-fit h-fit mb-8">
+            My hobbies
+        </h1>
+
+        <p class="max-w-xl">
+            Aside from coding, I also enjoy a variety of other activities, the most prominent of which are playing the Euphonium as well as Bouldering. 
+        </p>
+    </div>
 
     <PageEuphonium />
 
     <PageBouldering />
 
+
+    <div class="z-1 relative w-full min-h-screen pointer-events-none flex flex-col justify-center items-center">
+        <h1 class="nz-handwriting text-black subpixel-antialiased text-7xl text-center w-fit h-fit mb-8">
+            Coding Projects
+        </h1>
+
+        <p class="max-w-xl">
+            I started tinkering around with a laptop over 10 years ago. Since then I have always strived to get to know new technologies and learn more and more. From my first projects with Python to first tries of using C to calculate prime numbers to investing more and more of my time into webdevelopement, I have always been open towards new opportunities and problems to solve. 
+        </p>
+    </div>
+
+
     <PageCoding />
 </div>
-
-
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-    .nz-handwriting {
-        font-family: Pacifico, sans-serif;
-    }
-</style>
