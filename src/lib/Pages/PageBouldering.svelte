@@ -6,7 +6,7 @@
 
 
 <div class="relative min-h-screen w-full flex flex-col-reverse sm:flex-row justify-center items-center">
-    <div class="w-full sm:w-1/2 pl-16 text-right pr-16 mt-8 sm:m-0">
+    <div class="pb-[8vh] sm:pb-0 w-full sm:w-1/2 pl-16 text-right pr-16 mt-8 sm:m-0">
         <h1 class="pb-4 tracking-widest">Bouldering</h1>
 
         <p>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="relative w-full sm:w-1/2">
-        <img src={boulderingImage} alt={"Bouldering"}>
+        <img src={boulderingImage} alt={"Bouldering"}/>
 
         <p class="absolute bottom-2 left-3 text-slate-400">&copy Element Boulders</p>
     </div>

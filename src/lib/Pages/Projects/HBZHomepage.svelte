@@ -11,8 +11,8 @@
 
 
 
-<div class="h-screen w-screen relative">
-    <img class="absolute object-cover w-screen h-screen md:w-1/2 md:left-1/2" src={projectImage} alt={"Splash Screen"}>
+<div class="h-screen w-full relative">
+    <img class="absolute object-left object-cover w-full h-screen md:w-1/2 md:left-1/2" src={projectImage} alt={"Splash Screen"}/>
 
     <div 
         class="

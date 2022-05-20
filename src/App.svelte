@@ -9,7 +9,7 @@
 <main>
     <TailwindCss />
 
-    <div class="mainContainer hideScrollbar absolute bottom-0 left-0 top-0 right-0 overflow-auto scrollbar-hide">
+    <div class="mainContainer hideScrollbar absolute bottom-0 left-0 top-0 right-0 overflow-auto scrollbar-hide scroll-smooth">
         <SplashPage></SplashPage>
         <AboutMe></AboutMe>
     </div>

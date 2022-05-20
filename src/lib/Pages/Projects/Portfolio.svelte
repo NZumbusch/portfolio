@@ -2,7 +2,7 @@
     import UsedTechnologies from "../../UsedTechnologies.svelte";
 
     let images = [
-        "/src/assets/Coding/HBZForum/Overview.PNG",
+        "/src/assets/Coding/Portfolio/Start with N.webp",
     ]
 
     let projectImage = images[0];
@@ -10,15 +10,15 @@
 
 
 
-<div class="h-screen w-screen relative">
-    <img class="absolute object-left object-cover w-screen h-screen md:w-1/2" src={projectImage} alt={"Splash Screen"}>
+<div class="h-screen w-full relative">
+    <img class="absolute object-left object-cover w-screen h-screen md:w-1/2" src={projectImage} alt={"Splash Screen"}/>
 
     <div 
         class="
             absolute bg-black/80 flex flex-col justify-center items-center p-8
 
             bottom-0 left-0 right-0 pb-[min(25vh)]
-            md:top-0 md:left-1/2 xl:pb-0
+            md:top-0 md:left-1/2 lg:pb-0
         "
     >
         <h1 class="text-3xl text-white">Portfolio</h1>
@@ -28,11 +28,11 @@
         </p>
 
 
-        <div class="absolute bottom-[30px] xl:bottom-5 xl:left-5 text-white">
-            <a class="rounded border-2 p-1 border-white mr-1 transition hover:text-teal-500 hover:border-teal-500" href="https://hbz.suso.schulen.konstanz.de/forum/v2/">Live Website</a>
+        <div class="absolute bottom-[30px] lg:bottom-5 lg:left-5 text-white">
+            <a class="rounded border-2 p-1 border-white mr-1 transition hover:text-teal-500 hover:border-teal-500" href="/">Live Website</a>
             <a class="rounded border-2 p-1 border-white mr-1 transition hover:text-teal-500 hover:border-teal-500" href="https://github.com/HBZ-Suso/forum">Sourcecode</a>
         </div>
-        <div class="absolute bottom-16 xl:bottom-2 xl:right-2">
+        <div class="absolute bottom-16 lg:bottom-2 lg:right-2">
             <UsedTechnologies technologies={["svelte", "ts", "tailwind"]} />
         </div>
     </div>

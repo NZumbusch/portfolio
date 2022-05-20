@@ -8,7 +8,7 @@
 
 
 
-<div class="relative h-screen w-full">
+<div class="relative h-auto w-full">
     <div id="project-0" class="project w-full h-full relative z-1"><HBZHomepage /></div>
     <div id="project-1" class="project w-full h-full relative z-1"><HBZForum /></div>
     <div id="project-2" class="project w-full h-full relative z-1"><KSP /></div>

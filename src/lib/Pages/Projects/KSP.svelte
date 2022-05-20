@@ -3,7 +3,7 @@
 
     let images = [
         "/src/assets/Coding/KSP/About.PNG",
-        "/src/assets/Coding/HBZForum/Articles.PNG",
+        "/src/assets/Coding/HBZForum/Articles.webp",
     ]
 
     let projectImage = images[0];
@@ -11,8 +11,8 @@
 
 
 
-<div class="h-screen w-screen relative">
-    <img class="absolute object-right object-cover w-screen h-screen md:w-1/2 md:left-1/2" src={projectImage} alt={"Splash Screen"}>
+<div class="h-screen w-full relative">
+    <img class="absolute object-right object-cover w-screen h-screen md:w-1/2 md:left-1/2" src={projectImage} alt={"Splash Screen"}/>
 
     <div 
         class="

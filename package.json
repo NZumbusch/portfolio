@@ -24,6 +24,7 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
+    "svelte-lazy": "^1.1.0",
     "svelte-scrollto": "^0.2.0"
   }
 }
